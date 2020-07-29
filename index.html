@@ -4,16 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Newsletter Registration Form</title>
+    <title>The Code Review | Newsletter Signup</title>
 
     <!-- Link to css -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <!-- Link to fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -39,7 +38,7 @@
                 <div class="input">
                     <!-- Full Name -->
                     <label for="full-name">Full Name</label>
-                    <input type="text" name="user_name" id="name" placeholder="required" required>
+                    <input type="text" name="user_name" id="full-name" placeholder="required" required>
                 </div>
 
                 <div class="input">
@@ -51,7 +50,7 @@
                 <div class="input">
                     <!-- Phone Number -->
                     <label for="phone-number">Phone Number</label>
-                    <input type="tel" name="user_phone" id="phone-number">
+                    <input type="tel" name="user_phone" id="phone-number" placeholder="10-digit">
                 </div>
 
                 <div class="input">
@@ -132,11 +131,11 @@
                 </div>
 
                 <label id="label-textarea" for="topic">Other topics you'd like to hear about</label>
-                <textarea name="interested-topic" id="topic" cols="30" rows="10"></textarea>
+                <textarea name="interested-topic" id="topic" placeholder="We'd love to hear your thoughts..."></textarea>
 
             </fieldset>
 
-            <button type=“submit”>Sign Up</button>
+            <button type="submit">Sign Up</button>
 
         </form>
     </main>

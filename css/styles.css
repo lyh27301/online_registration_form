@@ -1,7 +1,7 @@
 /* font */
 
 * {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Merriweather', serif;
     line-height: 1.5rem;
     text-align: center;
     margin: 0 auto;
@@ -85,6 +85,18 @@ input, select {
     padding-left: 10px;
 }
 
+textarea {
+    padding: 10px 0 0 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus
+{
+    outline: none;
+    border: 2px solid #c4dae4;
+}
+
 select {
     color: #949ba0;
 }
@@ -94,6 +106,12 @@ input::placeholder {
     text-align: end;
     padding-right: 10px;
     font-style: italic;
+}
+
+textarea::placeholder {
+    color: #949ba0;
+    letter-spacing: .05rem;
+    font-size: 1rem;
 }
 
 
