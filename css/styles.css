@@ -1,0 +1,180 @@
+/* font */
+
+* {
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    color: #2d3945;
+}
+
+main *, .hr, header h2, header p{
+    max-width: 90vw;
+}
+
+header>h1 {
+    text-transform: uppercase;
+    background-color: #2d3945;
+    color: white;
+    font-size: 1.3rem;
+    padding: 30px 0 30px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+header>h2 {
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+}
+
+header>p {
+    color: #6e7377;
+    font-weight: 100;
+    font-size: .9rem;
+    padding-bottom: 30px;
+}
+
+.hr {
+    background-color: #2d3945;
+    height: 1.4px;
+}
+
+.hr:first-child {
+    height: 4px;
+    margin-bottom: 1.4px;
+}
+
+form * {
+    margin: 0;
+    text-align: start;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    padding-top: 20px;
+    padding-bottom: 7px;
+    text-align: start;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.input {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: .3rem;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+input, select {
+    width: 90vw;
+    border: none;
+    background-color: #eff0f1;
+    height: 2.5rem;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+select {
+    color: #949ba0;
+}
+
+input::placeholder {
+    color: #949ba0;
+    text-align: end;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+
+textarea {
+    width: 90vw;
+    border: none;
+    background-color: #eff0f1;
+    height: 5rem;
+    border-radius: 5px;
+}
+
+#zip-code {
+    margin-bottom: 30px;
+}
+
+#newsletter p {
+    padding: 15px 0 10px;
+    color: #6e7377;
+}
+
+.check+label, .radio+label {
+    display: inline;
+}
+
+.check, .radio {
+    display: inline-block;
+    height: 1rem;
+    width: auto;
+    margin-right: 10px;
+}
+
+.check-block,
+.radio-block {
+    padding: 8px 0;
+}
+
+button {
+    text-align: center;
+    background-color: #57bbb5;
+    color: white;
+    font-weight: 900px;
+    margin: 20px 0;
+    padding: 15px 0;
+    width: 90vw;
+    border: none;
+    border-radius: 5px;
+}
+
+footer p {
+    color: #949ba0;
+    padding-top: 30px;
+    font-size: 1rem;
+    font-style: italic;
+    padding-bottom: 80px;
+    font-weight: lighter;
+}
+
+@media (min-width: 768px) {
+    main, .input, .check-block, .radio-block, .hr, header h2, header p, textarea, button {
+        max-width: 60vw;
+        width: 60vw;
+    }
+
+    .input {
+        flex-wrap: nowrap;
+        padding: 10px 0;
+    }
+
+    input[type=text]:not(#zip-code),
+    input[type=tel],
+    input[type=email],
+    select {
+        width: 45vw;
+    }
+
+    label:not(#label-textarea){
+        width: 15vw;
+    }
+
+    #zip-code {
+        width: fit-content;
+    }
+    
+}

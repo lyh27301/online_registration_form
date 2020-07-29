@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Newsletter Registration Form</title>
+
+    <!-- Link to css -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- Link to fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>the code review</h1>
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+    </header>
+
+    <div>
+        <div class="hr"></div>
+        <div class="hr"></div>
+    </div>
+
+    <main>
+        <form action="index.html" method="post">
+
+            <fieldset>
+
+                <legend>Contact Information</legend>
+
+                <div class="input">
+                    <!-- Full Name -->
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="user_name" id="name" placeholder="required" required>
+                </div>
+
+                <div class="input">
+                    <!-- Email Address-->
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="user_email" id="email-address" placeholder="required" required>
+                </div>
+
+                <div class="input">
+                    <!-- Phone Number -->
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" name="user_phone" id="phone-number">
+                </div>
+
+                <div class="input">
+                    <!-- Street Address -->
+                    <label for="street-address">Street Address</label>
+                    <input type="text" name="user_street_address" id="street-address">
+                </div>
+
+                <div class="input">
+                    <!-- City -->
+                    <label for="city">City</label>
+                    <input type="text" name="user_city" id="city">
+                </div>
+
+                <div class="input">
+                    <!-- State -->
+                    <label for="state">State</label>
+                    <select name="user_state" id="state">
+                        <option value="" disabled selected hidden>Choose State</option>
+                        <option value="AB">Alberta</option>
+                        <option value="BC">British Columbia</option>
+                        <option value="MB">Manitoba</option>
+                        <option value="NB">New Brunswick</option>
+                        <option value="NL">Newfoundland and Labrador</option>
+                        <option value="NS">Nova Scotia</option>
+                        <option value="ON">Ontario</option>
+                        <option value="PE">Prince Edward Island</option>
+                        <option value="QC">Quebec</option>
+                        <option value="SK">Saskatchewan</option>
+                        <option value="NT">Northwest Territories</option>
+                        <option value="NU">Nunavut</option>
+                        <option value="YT">Yukon</option>
+                    </select>
+                </div>
+
+                <div class="input">
+                    <!-- Zip Code -->
+                    <label for="zip-code">Zip Code</label>
+                    <input type="text" name="user_zip_code" id="zip-code" maxlength="7" minlength="6">
+                </div>
+            </fieldset>
+
+            <div class="hr"></div>
+
+            <fieldset id="newsletter">
+                <legend>Newsletter</legend>
+
+                <!-- Newsletter Selection -->
+                <p>Select the newsletters you would lke to receive</p>
+
+                <div class="check-block">
+                    <input class="check" type="checkbox" id="html-news" value="receive-html" name="newsletter_receive" checked>
+                    <label for="html-news">HTML News</label>
+                </div>
+
+
+                <div class="check-block">
+                    <input class="check" type="checkbox" id="css-news" value="receive-css" name="newsletter_receive">
+                    <label for="css-news">CSS News</label>
+                </div>
+
+                <div class="check-block"><input class="check" type="checkbox" id="js-news" value="receive-js"
+                        name="newsletter_receive">
+                    <label for="js-news">JavaScript News</label>
+                </div>
+
+
+                <!-- Format Selection -->
+                <p>Newsletter format</p>
+                <div class="radio-block">
+                    <input class="radio" type="radio" id="html" name="format" value="format-html" checked>
+                    <label for="html">HTML</label>
+                </div>
+
+                <div class="radio-block">
+                    <input class="radio" type="radio" id="txt" name="format" value="format-txt">
+                    <label for="txt">Plain text</label>
+                </div>
+
+                <label id="label-textarea" for="topic">Other topics you'd like to hear about</label>
+                <textarea name="interested-topic" id="topic" cols="30" rows="10"></textarea>
+
+            </fieldset>
+
+            <button type=“submit”>Sign Up</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
+
+</body>
+
+</html>
