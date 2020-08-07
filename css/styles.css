@@ -86,8 +86,7 @@ input, select {
 }
 
 .touched:invalid {
-    background-color: lightpink;
-    color: white;
+    background-color: rgb(247, 228, 230);
 }
 
 textarea {
