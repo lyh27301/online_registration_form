@@ -85,6 +85,11 @@ input, select {
     padding-left: 10px;
 }
 
+.touched:invalid {
+    background-color: lightpink;
+    color: white;
+}
+
 textarea {
     padding: 10px 0 0 10px;
 }
